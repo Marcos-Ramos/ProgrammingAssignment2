@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
   ## or entered in makeCacheMatrix function 
   get <- function() x                       
   
-  ## Function to cache the caculated inverse matrix in a variable that can be 
+  ## Function to cache the calculated inverse matrix in a variable that can be 
   ## used in any parent environment
   setsolve <- function(solve) m <<- solve
   
@@ -35,7 +35,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## if it is not posible to compute the inverse matrix, it shows a message clarifying
 ## the reason for.
 ## If you already have an inverse matrix cached, this function retrieves this matrix and
-## show you the matrix cached.
+## show you the inverse matrix cached.
 
 cacheSolve <- function(x, ...) {
   
